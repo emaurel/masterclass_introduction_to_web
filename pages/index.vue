@@ -1,16 +1,27 @@
 <template>
     <div class="header">
-        <h1>Edgar Maurel</h1>
+        <h1>
+            <!-- <img v-if="data?.[0]" :src="data[0].owner.avatar_url">-->Edgar Maurel
+        </h1>
 
     </div>
 
     <div class="repositories">
-        <h2>repo :</h2>
+        <li v-if="data">
+            <div class="name">
+        <h1>repositories :</h1>
+    </div>
         <li v-for="repo in data">
-            <img :src="repo.img">
-            <a v-bind:href= "repo.html_url" target="_blank">{{repo.name}}</a>
-    </li>
-    <!-- <button @click="log">click me</button> -->
+            <p>
+                <a :href="repo.html_url" target="_blank">{{ repo.name }}
+                </a>
+                <language v-if="repo.language">
+                    in {{ repo.language }}
+                </language>
+            </p>
+        </li>
+        <button @click="log">click me</button>
+        </li>
 
     </div>
 </template>
@@ -25,6 +36,8 @@ let data = await $fetch("api/hello")
     });
 function log() {
     console.log(data)
+
+
 }
 </script>
 
@@ -48,12 +61,14 @@ a {
 
 <style scoped>
 .repositories {
-    display: grid;
+    list-style-type: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    color: red;
 }
 
 a {
@@ -62,9 +77,41 @@ a {
 </style>
 
 <style scoped>
+.name {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+}
+
+a {
+    text-decoration: underline;
+}
+</style>
+
+
+<style scoped>
 .header {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    width: 100vw;
+}
+
+a {
+    text-decoration: underline;
+}
+</style>
+
+<style scoped>
+.align {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     font-size: larger;
     width: 100vw;

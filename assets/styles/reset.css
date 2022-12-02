@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
 
+html{
+  background-color: rgb(46, 156, 151);
+}
+
 body {
   margin: 0;
 }
@@ -22,7 +26,7 @@ pre {
 }
 
 button {
-    background: transparent;
+    background:rgb(31, 107, 103);
     padding: 0;
     border: none;
 }

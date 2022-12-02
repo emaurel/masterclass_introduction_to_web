@@ -1,7 +1,8 @@
 
 import axios from "axios";
 
-const token = process.env.GH_TOKEN
+const config = useRuntimeConfig()
+
 
 export default defineEventHandler(async (event) => {
     const { data } = await axios({
