@@ -37,7 +37,7 @@
     <div class="header">
         <h2>about me</h2>
         <h2>
-            <a class="img" href="mailto:edgar.maurel@gmail.com">
+            <a class="img" href="mailto:edgar.maurel@epitech.eu">
                 <img class="resize2 round" :src="google">
             </a>
             <a class="img" href="https://discordapp.com/users/179641132202983424" target="_blank">
@@ -49,6 +49,9 @@
             </a>
             <a class="img" href="https://enzi22222.itch.io/" target="_blank">
                 <img class="resize2 round" :src="itch">
+            </a>
+            <a class="img" href="https://github.com/emaurel" target="_blank">
+                <img class="resize2 round" :src="github">
             </a>
 
         </h2>
@@ -70,7 +73,7 @@ let google = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%
 let discord = "https://upload.wikimedia.org/wikipedia/fr/8/80/Logo_Discord_2015.png";
 let coding_game = "https://cdn.worldvectorlogo.com/logos/codingame-1.svg";
 let itch = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB7cN-r3xCdsUnaa8IBKwxZfezOWQohQf-OQ&usqp=CAU";
-let github = "https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png";
+let github = "https://cdn-icons-png.flaticon.com/512/25/25231.png";
 
 </script>
 
