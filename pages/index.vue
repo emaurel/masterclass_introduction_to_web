@@ -125,6 +125,8 @@ let github = "https://cdn-icons-png.flaticon.com/512/25/25231.png";
     border: 2px inset #082b42;
     border-radius: 10px;
     word-wrap: break-word;
+    font-family: fangsong;
+
 }
 
 
@@ -160,6 +162,7 @@ let github = "https://cdn-icons-png.flaticon.com/512/25/25231.png";
     font-size: larger;
     padding-left: 10vw;
     padding-top: 5vw;
+    color: white;
 }
 
 .go-down {
@@ -224,6 +227,12 @@ let github = "https://cdn-icons-png.flaticon.com/512/25/25231.png";
     color: #d9d9d9;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
     color: #d9d9d9;
+}
+
+#footer {
+    text-align: left;
+    background-color: black;
+    color: white;
 }
 
 .img {
