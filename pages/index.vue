@@ -22,22 +22,22 @@
         <ul class="repositories wrap">
             <p v-for="repo in data">
                 <a :href="repo.html_url" target="_blank">
-                    <div class="flex-item">
+                    <div class="flex-item github">
                         {{ repo.name }}
                     </div>
                 </a>
             </p>
             <a href="https://enzi22222.itch.io/power-doesnt-wanna-shower" target="_blank">
-                    <div class="flex-item">
-                        power doesn't wanna shower
-                    </div>
-                </a>
+                <div class="flex-item itch">
+                    power doesn't wanna shower
+                </div>
+            </a>
         </ul>
     </div>
     <div class="header">
         <h2>about me</h2>
         <h2>
-            <a class="img" href="https://edgar.maurel@gmail.com" target="_blank">
+            <a class="img" href="mailto:edgar.maurel@gmail.com">
                 <img class="resize2 round" :src="google">
             </a>
             <a class="img" href="https://discordapp.com/users/179641132202983424" target="_blank">
@@ -47,8 +47,7 @@
                 target="_blank">
                 <img class="resize2 round" :src="coding_game">
             </a>
-            <a class="img" href="https://enzi22222.itch.io/"
-                target="_blank">
+            <a class="img" href="https://enzi22222.itch.io/" target="_blank">
                 <img class="resize2 round" :src="itch">
             </a>
 
@@ -71,7 +70,7 @@ let google = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%
 let discord = "https://upload.wikimedia.org/wikipedia/fr/8/80/Logo_Discord_2015.png";
 let coding_game = "https://cdn.worldvectorlogo.com/logos/codingame-1.svg";
 let itch = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB7cN-r3xCdsUnaa8IBKwxZfezOWQohQf-OQ&usqp=CAU";
-console.log(avatar)
+let github = "https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png";
 
 </script>
 
@@ -189,6 +188,30 @@ console.log(avatar)
     font-size: larger;
 }
 
+.github {
+    background-image: url("https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png");
+    background-size: 420px 120px;
+    background-blend-mode: difference;
+}
+
+.github:hover {
+    background-image: url("https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png");
+    background-size: 420px 120px;
+    background-blend-mode: difference;
+}
+
+.itch {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Itch.io_logo.svg/1200px-Itch.io_logo.svg.png");
+    background-size: 420px 120px;
+    background-blend-mode: color-burn;
+}
+
+.itch:hover {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Itch.io_logo.svg/1200px-Itch.io_logo.svg.png");
+    background-size: 420px 120px;
+    background-blend-mode: color-burn;
+}
+
 .link {
     transition: 0.35s;
 }
@@ -205,6 +228,6 @@ console.log(avatar)
     width: 50px;
     height: 50px;
     padding: 15px;
-    
+
 }
 </style>
