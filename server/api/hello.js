@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
         method: 'get',
         url: 'https://api.github.com/users/emaurel/repos',
         headers: {
-            Authorization: `Bearer ${token}`,
+            Authorization: `Bearer ${config.token}`,
             "Content-type": "application/json",
             'Accept-Encoding': 'Identify',
             

@@ -8,9 +8,7 @@
 
     <div class="repositories">
         <li v-if="data">
-            <div class="name">
-        <h1>repositories :</h1>
-    </div>
+  
         <li v-for="repo in data">
             <p>
                 <a :href="repo.html_url" target="_blank">{{ repo.name }}
